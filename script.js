@@ -4,10 +4,16 @@ const main = document.querySelector('main')
 
 openbtn.addEventListener('click',()=>{
     side.classList.toggle('hide')
-    main.classList.toggle('blur')
     if(openbtn.textContent == ">"){
         openbtn.textContent = "<"
     }else{
         openbtn.textContent = ">"
     }
+})
+
+const sidebtn = document.getElementById('sidebtn')
+const links = document.querySelector('.links')
+
+sidebtn.addEventListener('click',()=>{
+    links.classList.toggle('hide')
 })
