@@ -5,6 +5,10 @@ body{
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .side{
     display: flex;
@@ -141,10 +145,22 @@ main div ,h2 ,h1{
 .question{
     cursor: pointer;
     margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: solid .5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question:hover{
+    background-color: gray;
 }
 
 .answer{
     display: none;
+    margin-left: 30px;
 }
 
 .answer.active{
