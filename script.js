@@ -2,6 +2,14 @@ const openbtn = document.getElementById('open')
 const side = document.querySelector('.side')
 const main = document.querySelector('main')
 
+const swiper = new Swiper(".swiper",{
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
+})
+
 openbtn.addEventListener('click',()=>{
     side.classList.toggle('hide')
     if(openbtn.textContent == ">"){
@@ -17,3 +25,5 @@ const links = document.querySelector('.links')
 sidebtn.addEventListener('click',()=>{
     links.classList.toggle('hide')
 })
+
+
