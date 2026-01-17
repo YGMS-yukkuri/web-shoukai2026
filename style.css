@@ -39,6 +39,7 @@ body{
     color: white;
     background-color: black;
     overflow: hidden;
+    cursor: e-resize;
 }
 
 #sidebtn span {
